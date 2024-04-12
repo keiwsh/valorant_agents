@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: gainsboro;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: black;
+  font-size: 60px;
+  color: white;
+}
+
+.agents {
+  flex: 0 0 auto;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 10px;
+  width: 30%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  margin-top: 65px;
+}
+
+.agents.astra {
+  background-color: #cb33b2;
+}
+
+.agents.breach {
+  background-color: #ca5826;
+}
+
+.agents img {
+  width: 70%;
+  height: auto;
+}
+.agents .skills {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 25%;
+  gap: 10px;
+  margin-top: 20px;
+  color: #cb33b2;
+}
+
+.agents .skills img {
+  flex: 0 0 auto;
+}
+
+.agents:hover {
+  transform: scale(1.05);
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
